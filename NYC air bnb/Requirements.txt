@@ -1,0 +1,59 @@
+File Title: Sprint 1 project nyc_airbnb_data.xlsx
+DESCRIPTION HERE (USE AI)
+
+Table of Contents
+| 1 | Sprint 1 Project nyc_Airbnb_data project | To analyze the vacation rental market in the Manhattan borough of New York City |
+| :-----------: | ----------- |----------- |
+| 1 | [Sprint 1 Project nyc_airbnb_data](https://docs.google.com/spreadsheets/d/1_bk3qjXdJGvZEP4OpZsygl5Lt6D5twR_lGUwViAX36o/edit?usp=sharing) | Advanced spreadsheets mastery project showcasing use of formulas and data cleaning |
+| 2 | [nyc_airbnb_data.xlsx] | Contains the raw data used for the project |
+| 3 | README.md | Requirements.txt |
+| 4 | [Requirements.txt] | 
+
+Data
+DESCRIPTION:
+'data_dictionary': table with raw data, containing 4 columns, 'Field', 'Type', 'Calculated' and 'Description'
+
+Sprint 1 Project nyc_airbnb_data
+Contains 12 sheets: 'Start here', 'Assumptions and cleaning steps', 'Listings', 'Part 2 top 10 neighborhoods', '1 bedroom is the size to have', 'Part 3 Occupancy rate', 'The most popular day of the week', 'Part 4 potential annual revenue', 'Part 5 what if superhost'. 'Part 5 instant booking', 'Part 5 property with doorman', 'Part 5 higher review ratings'
+
+Assumptions:
+Removed any superhost  F		
+Removed Review ratings 3 score and below		
+Filtered listings with no reviews for the last 12 months		
+Filtered listings with minimum nights requirement to 7 or fewer		
+Created new column, neighborhood_clean, with proper capitalization of text		
+On the Calendar tab, added new column for day of the week		
+Formatted the date column on calendar tab to date format		
+Created a new column "review_scores_rating_ROUNDed" on the listings tab, used MROUND function to round up by 0.5 from the "review_scores_rating" column		
+Price range filtered from $100 - $2000, to leave out super luxury properties, as well as cheap properties		
+Minimum amount of nights, stays = 7
+		
+Process:
+Freeze rows						
+Match spelling of city names						
+Cleanup white spaces						
+Columnd deleted on Listings tab, did not contain any data: calendar_updated						
+Text was wrapped on Listings tab, Column O						
+Column deleted on Listings tab, Bathrooms, empty data						
+Column deleted on Listings tab, License, empty data						
+Created column, "Host greets you", on listings tab						
+Used the PROPER function for columnd AD of the listings tab						
+Used MROUND function of column BF on the listings tab						
+Used ISNUMBER and MATCH functions on column AO of the listings tab, for get TRUE/FALSE results						
+
+
+Findings:
+In the Lower east side neighborrhod the average price per night is $308 per night, with an average occupancy rate of 63%	
+
+The potential annual revenue is slightly above the $70,000 USD mark	
+
+Recommendations:
+Based on my analysis, the most potentially profitable neighborhood for an Airbnb property is the Lower east side 						
+						
+The most profitable property size are one bedroom apartments/properties		
+						
+The most poular day of the week are Fridays, followed by Saturdays												
+If the property has a super host you can charge 6% more												
+If instant booking is offered, the occupancy rate increases by 1.3%												
+When the hosts greets the guests, the review rating increases slightly												
+If your property has a review score rating of 4 stars and above you can charge more per stay						
