@@ -1,0 +1,43 @@
+File Title: BIA Welcome Sprint Project. Fresh Beats User Data.xlsx
+
+
+Table of Contents
+| 1 | sprint 0  BIA Welcome Sprint Project. Fresh Beats User Data | Google sheets file |
+| :-----------: | ----------- |----------- |
+| 1 | [Jesus Acevedo - Project status Report](https://docs.google.com/document/d/10ACjtrirlJtXBievl-pThDcsCeh3Rea-yuajE29jnv8/edit) | Google docs file report format |
+| 2 | [Copy of Template Project Status Report](https://docs.google.com/document/d/1-jwapH6wljaWUvxV74-cuz1qf2H9kBXgil7NcKwl8og/edit) | Template for a report, Google docs file |
+| 3 | README.md | Requirements.txt |
+| 4 | [Requirements.txt] | |
+
+| Copy of BIA Welcome Sprint Project. Fresh Beats User Data | Raw data, google sheets file |
+| ----------- |----------- |
+| DATA | Single table |
+| Description |Contains 5 tabs/sheets: Data, Visuals A, Visuals B, Visuals C, and Insights and recommendastions |
+| Assumptions | Marketing should try focused campaigns targeting typical demographics for fans of these genres.
+We should analyze user retention in these genres, and consider how we can maximize it.
+Product/marketing teams should try experiments to generate leads in alternative genres.
+Consider intermediate tiers between free and paid, to make it easier to convert users from free to paid.
+Offer users a referral marketing option, so they can get a free trial of the paid tier by referring new users.
+It is worth doing deeper research into previous years to understand why pop is on a downwards trend.
+Try promotions focused on rock that offer free trials to convert to paid users.
+We should analyze more ways to increase the engagement of rock-listening users, as a potential growth segment.
+Paid users are very valuable, so it is worth offering time-limited promotions and other deals to convert users from free to paid.
+Indie is particularly popular with paid users, so focus promotions there. |
+| Findings | Pop genre peaked in 2021 and is on a downwards trend
+Paid users are more active (listen to more music) than free.
+Rock is the most popular genre for free users.
+Electronic and hip hop music are overall on an upwards trend.
+Paid users have steadier growth and better user retention than free. |
+
+Data
+DESCRIPTION:
+'Data': Raw data, user_tier, genre, number_of_users, tracks_listened
+  
+
+Process:
+-Matched recommendations and insights to visualizations
+
+
+Notes:
+This was the first independent report created on 04/12/2024 by Jesus Acevedo, as part of the welcome sprint of the Tripleten BIA bootcamp
+﻿
