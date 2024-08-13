@@ -1,0 +1,75 @@
+Business analytics project
+
+Objective: Turning event logs into business metrics
+
+The dataset has the following columns:
+
+user_id: unique customer IDs
+event_type: the type of activity by the user
+category_code: category of the product being viewed or purchased
+brand: company that makes the product
+price: price of the product, in USD
+event_date: date of the user activity, in YYYY-MM-DD format
+
+Part 1: Building a conversion funnel
+
+"The executive team is interested in understanding how well the website is converting product page views into purchases. Your first job is to create a conversion funnel to better understand how users interact with the website."
+
+Steps:
+
+Using data from the “raw_user_activity” sheet, created the funnel in a pivot table as a new sheet called “conversion_funnel”
+Counting the unique users for each stage of the funnel
+Used formulas to create two new columns in the pivot table: total conversion rates and conversion rates.
+
+Part 2: Prepare data for cohort analysis
+
+"The company wants you to build acquisition cohorts based on the month of a user’s first purchase, and they want you to track cohort metrics month by month."
+
+Steps:
+
+-Filtering purchases:
+Created a new blank sheet tab called “purchase_activity”
+Using the filters in the “raw_user_activity” sheet, selected only event types that are purchases
+After applying the filter, copied the entire sheet and pasted the data into the “purchase_activity” sheet
+
+Reset the filter in the “raw_user_activity” sheet.
+
+-Calculated first purchase dates:
+Using the “purchase_activity” sheet data, inserted a pivot table as a new sheet called “first_purchase”
+Configured the settings of the pivot table to calculate the minimum event_date for each user.
+-Transfered the first purchase dates to a new column:
+Entered first_purchase_date as a column header in cell G1 of the “purchase_activity” sheet
+In cell G2, wrote a formula that uses the VLOOKUP() function to find the date from the “first_purchase” sheet that corresponds to the user ID in cell A2
+Then copied the formula to every row in column G.
+
+-Setting up monthly data to build and track cohorts:
+Used the TEXT() function to create event_month in column H and first_purchase_month in column I. Used the DATEDIF() function to create cohort_age in column J as the number of months between the first purchase and the event.
+
+Part 3: Calculate retention rates
+
+Steps:
+
+-Grouped data into cohorts:
+Using the data from the “purchase_activity” sheet, inserted another pivot table as a new sheet called “cohort_analysis”
+Configured the pivot table so that each represents one cohort, which are based on the month in which customers made their first purchase. The pivot table has the count of unique users for each cohort_age in the columns.
+
+-Calculated overall retention rates:
+Created a new blank sheet called “retention_rates”; Added row labels in cells A3 to A7 for each cohort in chronological order. Added column labels in cells B2 to E2 that represent the cohort ages from 1 to 4 months.
+In cell B3, wrote a formula that calculates the retention rate for each cohort at each cohort age in the table created, based on the starting cohort sizes.
+
+
+Part 4 - Organize and document the spreadsheet
+
+Filled in the results synopsis and analysis descriptions in the “Executive Summary” sheet:
+Results — Briefly summarized the results and conclusions from the analysis:
+The “conversion_funnel” sheet.
+The “retention_rates” sheet.
+Analysis — Explained important properties about the data and any assumptions made in the analysis:
+Described the raw data.
+Explaind what data I used to calculate the conversion rates in the funnel
+Explained the decisions I made in the cohort analysis of retention rates
+Reordered the sheets tabs so that the “Table of Contents” and “Executive Summary” sheets came first, followed by the sheets with the analytical results, then the sheets used for calculations, and finally the raw data sheets last. Created a legend to help organize the sheets. Filled in the “Table of Contents” table with the organized sheet order and a brief one-sentence description of each section.
+Formatted the spreadsheets for readability.
+
+Result is in a google sheets file named "Business Analytics Project.xlsx"
+Created by Jesus Acevedo Delatorre
