@@ -1,0 +1,24 @@
+Saving Superstore project
+
+Objective: "You have been hired as a consultant to review the superstore’s operations and increase its profitability to avoid bankruptcy".
+
+Part 1: Profits & losses
+To identify the important centers of profit and loss for the superstore.
+Identified which are the two biggest profit centers and two biggest loss-makers.
+Which products should the superstore stop selling.
+Which product subcategories should the store focus on and which should they stop selling.
+
+Part 2: Advertising
+Identified the 3 best combinations of states and month of the year to advertise in. Made a visualization of the average profit for each month of the year for those 3 states.
+Return on Ad spend ratio 1/5 of profits.
+
+Part 3: Returned items
+Made the Returned field into a calculated field where the null values are 0 and the Yes values are 1.
+Used this new field to make a visualization for each of the following questions: 1. Which products have the highest return rate? 2. Which customers have the highest return rate?
+In a separate sheet, made a visualization of the average profit against the average return rate.
+
+Tableau workbook link:
+https://public.tableau.com/views/Sprint4Project_17182901917240/Toremaininbusiness?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link
+
+
+By Jesus Acevedo
